@@ -1,0 +1,43 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333333;
+}
+
+
+
+.nav-container{
+   display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-btn {
+    display: block;
+
+    font-size: 1.3rem;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 5px 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover, .nav-btn:active {
+    border-bottom: 3px solid #eee;
+    cursor: pointer;
+}

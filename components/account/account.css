@@ -1,0 +1,58 @@
+.acc{
+
+}
+
+.acc-container {
+    background-image: linear-gradient(to bottom, #f2f2f2, #eee);
+    border: 2px solid lightgrey;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 15%;
+    font-size: 11px;
+
+    display: block;
+    padding: 1rem 0 3rem 0;
+    color: #333333;
+
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+
+}
+
+.info-container {
+    display: block;
+}
+
+.acc-heading {
+    /*margin-bottom: 10px;*/
+    /*margin-left: 2rem;*/
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.acc-info {
+    margin-left: 3rem;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.acc-fileQuantity {
+    margin-left: 3rem;
+    margin-bottom: 10px;
+}
+
+.acc-space {
+    margin-left: 3rem;
+    margin-bottom: 10px;
+}
+
+.acc-downloads {
+    margin-left: 3rem;
+    margin-bottom: 10px;
+}

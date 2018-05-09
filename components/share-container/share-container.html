@@ -1,0 +1,27 @@
+
+
+<!-- GRID WITH ALL THE FILES INSIDE -->
+<section >
+    <div class="container">
+            <!-- Show msg with amount of matches only when  it differes from the default value -->
+            <h3 ng-hide="results.length == $ctrl.fileList.length" class="coincidence">{{results.length}} matche(s)</h3>
+        <div class="flex-grid">
+
+            
+              
+            <!-- Iterating through array and building the share items -->
+            <div ng-repeat="item in $ctrl.fileList | shareNameFilter:$ctrl.filter as results" class="fileItem">
+               
+                <app-share    
+                    rename-file="$ctrl.renameFile({oldName})"
+                    show-details="$ctrl.onDetailsClick({share})"   
+                    data="item"
+                    downloaded-file="$ctrl.downloadedFile()"
+                    remove-file="$ctrl.removeFile({item: item})"
+                    index="$index">
+            </app-share>
+            </div>
+        </div>
+    </div>
+
+</section>

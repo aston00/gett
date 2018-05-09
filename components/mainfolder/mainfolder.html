@@ -1,0 +1,31 @@
+<div class="mainFolderContainer">
+
+
+    <!-- header for the \full page -->
+    <study-app-header user="$ctrl.userInfo.fullname" logout="$ctrl.logout()"  login="$ctrl.login()"></study-app-header>
+
+    <div class="acc-filter">
+    <!-- unformation about user-->
+    <study-app-account ng-if="$ctrl.userInfo" data="$ctrl.data"></study-app-account>
+    <search-filter on-input-clear="$ctrl.onInputClear()" filtered-length="$ctrl.filteredLength" ng-if="$ctrl.userInfo" filter="$ctrl.filter"></search-filter>
+    </div>
+
+
+    <!-- Button for upoloading files to the array -->
+    <upload-btn ng-if="$ctrl.userInfo"></upload-btn>
+
+    <!-- files grid with all the files according to the array of files -->
+    <file-grid
+                on-details-click="$ctrl.shareInformation(share)"
+                get-filtered-length="$ctrl.getFilteredLength(results)"
+                filter="$ctrl.filter"
+                ng-if="$ctrl.userInfo"
+                downloaded-file="$ctrl.downloadedItem"
+               remove-file="$ctrl.removeItem(item)"
+               rename-file="$ctrl.renameShare(oldName)"
+               file-list="$ctrl.filesArray">
+                <!--rename-share="$ctrl.renameShare(oldName)"-->
+    </file-grid>
+
+    <file-details share-details="$ctrl.shareDetails"  ng-if="$ctrl.shareDetails"></file-details>
+</div>

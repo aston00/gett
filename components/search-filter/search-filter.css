@@ -1,0 +1,51 @@
+.filter{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.filter__heading{
+    margin-bottom: 1.5rem;
+}
+
+.filter__heading-msg {
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.filter__input {
+
+}
+
+input[type="text"], input[type="text"]:focus {
+    font-size: 20px;
+    border-style: double;
+    border-color: #1ebfff; 
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 2rem;
+    
+    outline: none;
+    padding-left: 1rem;
+    border-width: 0 0 3px 0;
+}
+
+.filter__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem auto 2rem auto;
+    width: 80%;
+    
+}
+
+.filter__info-coincidences{
+    font-size: 1rem;
+}
+
+.filter__info-clear {
+    font-size: 1rem;
+}

@@ -1,0 +1,28 @@
+
+    <section class="acc">
+        <div class="container">
+            <div class="acc-container">
+                <div class="info-container">
+                    <h3 class="acc-heading">Your account:</h3>
+
+                    <div class="acc-info">
+                        <h3 ng-bind="$ctrl.data.plan"></h3>
+                        <h4 ng-bind="'Expires: ' + $ctrl.data.expDate"></h4>
+                    </div>
+
+                    <div class="acc-fileQuantity">
+                        <h3 ng-bind="$ctrl.data.fileQuantity | fileAmountFilter"></h3>
+                    </div>
+
+                    <div class="acc-space">
+                        <h3 ng-bind="$ctrl.data.spaceTaken | sizeFilter"></h3>
+                        <h3 ng-bind="$ctrl.data.percentage | percentageFilter"></h3>
+                    </div>
+
+                    <div class="acc-downloads">
+                        <h3 ng-bind="$ctrl.data.downloaded + ' downloads'"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,28 @@
+
+
+
+    <!--<h3>{{$ctrl.item}}</h3>-->
+    <h2 ng-bind="$ctrl.data.title || $ctrl.data.files[0].filename" class="fileItem-name"></h2>
+    <!-- <br>
+    <span class="for-renaming">For renaming: </span><h2 ng-bind=" $ctrl.data.title " class="fileItem-name"></h2> -->
+
+    <div class="btn-container">
+        <!-- When we want to use function from upper component - we need to use objects to pass arguments into it -->
+        <button class="button-remove" ng-click="$ctrl.removeFile({item: $ctrl.data})">Remove</button>
+        <button class="button-rename"  ng-click="$ctrl.renameFile({oldName: $ctrl.data.sharename})">Rename</button>
+    </div>
+    <div class="fileItem-info">
+        <ul class="fileItem-info--list">
+            <li ng-bind="$ctrl.data.created | dateFilter"></li>
+            <li ng-bind="$ctrl.data.fileseed | fileAmountFilter"></li>
+            <li ng-bind="$ctrl.data.sizeCache | sizeFilter"></li>
+            <li ng-bind="$ctrl.data.downloads + ' downloaded'"></li>
+        </ul>
+    </div>
+
+    <!-- Button for increasing the moaunt of downloads  -->
+    <div  class="filePreview-container">
+        <a ng-click="$ctrl.downloadedFile()" href="javascript:void(0)" class="fileDownload">Download</a>
+        <!-- <a ui-sref="shareinfo({sharename: $ctrl.data.sharename})" >Details</a> -->
+        <a ng-click="$ctrl.showDetails({share: $ctrl.data})" href="javascript:void(0)" class="fileDetails">Details</a>
+    </div>

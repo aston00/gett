@@ -1,0 +1,33 @@
+
+
+.flex-grid {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coincidence {
+    font-size: 1.5rem;
+    color: #333333;
+    text-align: center;
+}
+
+
+.fileItem {
+    flex-basis: 45%;
+    margin: 2rem;
+    display: block;
+    width: 20%;
+    box-shadow: 5px 4px 10px lightgrey;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+.fileItem-info {
+
+}

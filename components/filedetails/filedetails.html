@@ -1,0 +1,29 @@
+<main class="details-container">
+    <div class="container">
+        <div class="main-container">
+            <section class="details-info--file">
+                
+                <ul class="details-action-links">
+                    <li ng-bind="'File name: ' + $ctrl.shareDetails.files[0].filename "></li>
+                    <li ng-bind="$ctrl.shareDetails.downloads + ' downloads'"></li>
+                    <li>Created: <span ng-bind="$ctrl.shareDetails.created | dateFilter"></span></li>
+                    <li ng-bind="$ctrl.shareDetails.fileseed | fileAmountFilter"></li>
+                    <li ng-bind="$ctrl.shareDetails.sizeCache | sizeFilter"></li>
+                    
+
+                </ul>
+            </section>
+
+            <section class="details-file--example">
+                <h2 ng-bind="$ctrl.shareDetails.title || 'Some file name'"><button ng-click="">RENAME</button></h2>
+                <div class="details-file-preview-container">
+                    <div class="details-info-container">
+                        <h4>No preview available for this type of file.</h4>
+                        <h3><a class="file-details--download" href="#downloadFile">Download</a> <em>examples.desktop</em></h3>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</main>

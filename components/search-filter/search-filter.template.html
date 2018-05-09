@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <div class="filter">
+            <div class="filter__heading">
+                <h3 class="filter__heading-msg">Search your files</h3>
+            </div>
+            <div class="filter__input">
+                <input class="filter__input-field" placeholder="Enter search value here..." ng-model="$ctrl.filter" type="text"/>
+                       <!--ng-change="$ctrl.filter($ctrl.filterValue)" -->
+
+            </div>
+            <div ng-show="$ctrl.filter" class="filter__info">
+                <!-- <h4 class="filter__info-coincidences"><span ng-bind="$ctrl.filteredLength"></span> matches</h4> -->
+                <a class="filter__info-clear" href="javascript:void(0)" ng-click="$ctrl.onInputClear()">Clear</a>
+            </div>
+        </div>
+    </div>
+</section>

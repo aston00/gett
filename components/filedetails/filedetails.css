@@ -1,0 +1,68 @@
+.main-container {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.details-info--file {
+    flex-basis: 15%;
+    flex-shrink: 0;
+    display: block;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2;
+    margin-right: 2rem;
+}
+
+.details-info-list {
+    list-style: none;
+}
+
+.details-info-list > li {
+    color: darkgrey;
+}
+
+.details-action-links {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.details-action-links > li {
+
+}
+
+.details-action-links > li > a:link, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+.details-action-links > li > a:hover {
+    text-decoration: underline;
+}
+
+.details-file--example {
+    flex-basis: 80%;
+    display: block;
+
+}
+
+.details-file--example > h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 5px 0 5px 10px;
+    color: grey;
+}
+
+.details-file-preview-container {
+    height: 400px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 2px solid lightgrey;
+    position: relative;
+}
+
+.details-info-container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

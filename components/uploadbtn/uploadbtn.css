@@ -1,0 +1,39 @@
+.uploadContainer {
+
+
+    margin: auto;
+    width: 40%;
+    position: relative;
+}
+
+.uploadFileContainer {
+    margin: 50px auto 50px auto;
+
+}
+
+#uploadbtn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+#uploadbtn + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 5rem;
+    color: #333333;
+    background-color: #f2f2f2;
+    display: inline-block;
+    cursor: pointer;
+    margin: .3rem 6rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+#uploadbtn:focus + label , #uploadbtn + label:hover {
+    border: 2px dotted #1E90FF;
+}
